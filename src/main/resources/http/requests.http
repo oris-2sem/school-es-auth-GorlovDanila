@@ -1,0 +1,25 @@
+Admin
+###
+POST http://localhost:8080/auth/token
+Content-Type: application/x-www-form-urlencoded
+
+email=teacher@gmail.com&password=1234
+###
+User
+###
+
+POST http://localhost:8080/auth/token
+Content-Type: application/x-www-form-urlencoded
+
+email=student@gmail.com&password=12345
+
+###
+
+GET http://localhost:8080/teacher
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWFjaGVyQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9hdXRoL3Rva2VuIiwiZXhwIjoxNjgxODM5MjM1fQ.VN53ELVBYygkp4HuEpWyUHZ_4tMrNy1pl9EOUXPP8Mc
+#eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWFjaGVyQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9hdXRoL3Rva2VuIiwiZXhwIjoxNjgxODM4Njk1fQ.vQGESQvmSZ9bixTPPj7IXuznVcoKH_V00rXQsbUQ5fc
+
+###
+
+GET http://localhost:8080/student
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWFjaGVyQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9hdXRoL3Rva2VuIiwiZXhwIjoxNjgxODM4Njk1fQ.vQGESQvmSZ9bixTPPj7IXuznVcoKH_V00rXQsbUQ5fc

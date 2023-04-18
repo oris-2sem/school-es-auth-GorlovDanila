@@ -1,0 +1,2 @@
+INSERT INTO test.public.users(email, firstname, hashpassword, lastname, role) VALUES ('teacher@gmail.com', 'Danila', '$2y$10$c86SfgWi4sWsOwkHgyjJkOi9DGtWv', 'Volkov', 'ADMIN'),
+                                                                         ('student@gmail.com', 'Danila', '$2y$10$OBlCCm/NPaOjdP5IpE8BjemPLCT6mW6r3t37GetEKhQrLJOEgeufe', 'Volkov', 'USER');

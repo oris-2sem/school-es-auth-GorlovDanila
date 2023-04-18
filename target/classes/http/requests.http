@@ -1,0 +1,23 @@
+Admin
+###
+POST http://localhost:8080/auth/token
+Content-Type: application/x-www-form-urlencoded
+
+email=teacher@gmail.com&password=1234
+###
+User
+###
+
+POST http://localhost:8080/auth/token
+Content-Type: application/x-www-form-urlencoded
+
+email=student@gmail.com&password=12345
+
+###
+
+GET http://localhost:8080/teacher
+Authorization: Bearer
+
+###
+
+GET http://localhost:8080/student
